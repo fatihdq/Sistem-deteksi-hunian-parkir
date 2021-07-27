@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "442553609867",
+    "firebase_url": "https://deep-learning-c5285.firebaseio.com",
+    "project_id": "deep-learning-c5285",
+    "storage_bucket": "deep-learning-c5285.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:442553609867:android:42fd14d13c5a92c6b8ee8e",
+        "android_client_info": {
+          "package_name": "com.example.parking"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "442553609867-sb84pd06omk6948dkbtnebs4gks22cjj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCyvj-t2_WpCRQ1sPenqpaKNj4mRuDgQFA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "442553609867-sb84pd06omk6948dkbtnebs4gks22cjj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

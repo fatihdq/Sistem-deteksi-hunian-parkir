@@ -1,0 +1,826 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".Activity_Fparking">
+
+    <Button
+        android:id="@+id/text_cameraF"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="356dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="90dp"
+        android:background="@drawable/bg_rounded"
+        android:text="@string/camera_f"
+        android:textColor="@color/background"
+        android:fontFamily="@font/mebold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="36dp"
+        android:fontFamily="@font/mebold"
+        android:text="@string/find_your_parking_place"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="6dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="@string/not_available"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/button44"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="31dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="@string/available"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/button43"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:contentDescription="@string/find"
+        app:layout_constraintEnd_toStartOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.075"
+        app:srcCompat="@drawable/logo" />
+
+    <Button
+        android:id="@+id/area1F"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="23dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="145dp"
+        android:background="@drawable/parking_nonavailable"
+        android:text="@string/_1"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintWidth_percent="0.049" />
+
+    <Button
+        android:id="@+id/area2F"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="23dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="145dp"
+        android:background="@drawable/parking_nonavailable"
+        android:text="@string/_2"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/area1F"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintWidth_percent="0.053" />
+
+    <Button
+        android:id="@+id/area3F"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="23dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="145dp"
+        android:background="@drawable/parking_nonavailable"
+        android:text="@string/_3"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/area2F"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintWidth_percent="0.049" />
+
+    <Button
+        android:id="@+id/area4F"
+        android:layout_width="23dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="145dp"
+        android:background="@drawable/parking_nonavailable"
+        android:text="@string/_4"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/area3F"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintWidth_percent="0.049" />
+
+    <Button
+        android:id="@+id/area5F"
+        android:layout_width="25dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="145dp"
+        android:background="@drawable/parking_nonavailable"
+        android:text="@string/_5"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/area4F"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintWidth_percent="0.049" />
+
+    <Button
+        android:id="@+id/area6F"
+        android:layout_width="23dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="145dp"
+        android:background="@drawable/parking_nonavailable"
+        android:text="@string/_6"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/area5F"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintWidth_percent="0.049" />
+
+    <Button
+        android:id="@+id/area7F"
+        android:layout_width="23dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="145dp"
+        android:background="@drawable/parking_nonavailable"
+        android:text="@string/_7"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/area6F"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintWidth_percent="0.049" />
+
+    <Button
+        android:id="@+id/area8F"
+        android:layout_width="23dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="145dp"
+        android:background="@drawable/parking_nonavailable"
+        android:text="@string/_8"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/area7F"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintWidth_percent="0.049" />
+
+    <Button
+        android:id="@+id/area9F"
+        android:layout_width="23dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="145dp"
+        android:background="@drawable/parking_nonavailable"
+        android:text="@string/_9"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/area8F"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintWidth_percent="0.049" />
+
+    <Button
+        android:id="@+id/area10F"
+        android:layout_width="23dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="145dp"
+        android:background="@drawable/parking_nonavailable"
+        android:text="@string/_10"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/area9F"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintWidth_percent="0.049" />
+
+    <Button
+        android:id="@+id/area11F"
+        android:layout_width="25dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/parking_nonavailable"
+        android:text="@string/_11"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/area1F"
+        app:layout_constraintWidth_percent="0.062" />
+
+    <Button
+        android:id="@+id/area12F"
+        android:layout_width="25dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/parking_nonavailable"
+        android:text="@string/_12"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/area11F"
+        app:layout_constraintTop_toBottomOf="@+id/area1F"
+        app:layout_constraintWidth_percent="0.062" />
+
+    <Button
+        android:id="@+id/area13F"
+        android:layout_width="25dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/parking_nonavailable"
+        android:text="@string/_13"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/area12F"
+        app:layout_constraintTop_toBottomOf="@+id/area1F"
+        app:layout_constraintWidth_percent="0.062" />
+
+    <Button
+        android:id="@+id/area14F"
+        android:layout_width="25dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/parking_nonavailable"
+        android:text="@string/_14"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/area13F"
+        app:layout_constraintTop_toBottomOf="@+id/area1F"
+        app:layout_constraintWidth_percent="0.062" />
+
+    <Button
+        android:id="@+id/area15F"
+        android:layout_width="25dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/parking_nonavailable"
+        android:text="@string/_15"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/area14F"
+        app:layout_constraintTop_toBottomOf="@+id/area1F"
+        app:layout_constraintWidth_percent="0.062" />
+
+    <Button
+        android:id="@+id/area16F"
+        android:layout_width="25dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/parking_nonavailable"
+        android:text="@string/_16"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/area15F"
+        app:layout_constraintTop_toBottomOf="@+id/area1F"
+        app:layout_constraintWidth_percent="0.062" />
+
+    <Button
+        android:id="@+id/area17F"
+        android:layout_width="25dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/parking_nonavailable"
+        android:text="@string/_17"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/area16F"
+        app:layout_constraintTop_toBottomOf="@+id/area1F"
+        app:layout_constraintWidth_percent="0.062" />
+
+    <Button
+        android:id="@+id/area18F"
+        android:layout_width="25dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/parking_nonavailable"
+        android:text="@string/_18"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/area17F"
+        app:layout_constraintTop_toBottomOf="@+id/area1F"
+        app:layout_constraintWidth_percent="0.062" />
+
+    <Button
+        android:id="@+id/area19F"
+        android:layout_width="0dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/parking_nonavailable"
+        android:text="@string/_19"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/area11F"
+        app:layout_constraintWidth_percent="0.072" />
+
+    <Button
+        android:id="@+id/area20F"
+        android:layout_width="0dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/parking_nonavailable"
+        android:text="@string/_20"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/area19F"
+        app:layout_constraintTop_toBottomOf="@+id/area11F"
+        app:layout_constraintWidth_percent="0.072" />
+
+    <Button
+        android:id="@+id/area21F"
+        android:layout_width="0dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/parking_nonavailable"
+        android:text="@string/_21"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/area20F"
+        app:layout_constraintTop_toBottomOf="@+id/area11F"
+        app:layout_constraintWidth_percent="0.072" />
+
+    <Button
+        android:id="@+id/area22F"
+        android:layout_width="0dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/parking_nonavailable"
+        android:text="@string/_22"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/area21F"
+        app:layout_constraintTop_toBottomOf="@+id/area11F"
+        app:layout_constraintWidth_percent="0.072" />
+
+    <Button
+        android:id="@+id/area23F"
+        android:layout_width="0dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/parking_nonavailable"
+        android:text="@string/_23"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/area22F"
+        app:layout_constraintTop_toBottomOf="@+id/area11F"
+        app:layout_constraintWidth_percent="0.072" />
+
+    <Button
+        android:id="@+id/area24F"
+        android:layout_width="0dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/parking_nonavailable"
+        android:text="@string/_24"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/area23F"
+        app:layout_constraintTop_toBottomOf="@+id/area11F"
+        app:layout_constraintWidth_percent="0.072" />
+
+    <Button
+        android:id="@+id/area25F"
+        android:layout_width="0dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/parking_nonavailable"
+        android:text="@string/_25"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/area24F"
+        app:layout_constraintTop_toBottomOf="@+id/area11F"
+        app:layout_constraintWidth_percent="0.072" />
+
+    <Button
+        android:id="@+id/area26F"
+        android:layout_width="0dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/parking_nonavailable"
+        android:text="@string/_26"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/area25F"
+        app:layout_constraintTop_toBottomOf="@+id/area11F"
+        app:layout_constraintWidth_percent="0.072" />
+
+    <Button
+        android:id="@+id/area27F"
+        android:layout_width="0dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/parking_nonavailable"
+        android:text="@string/_27"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/area26F"
+        app:layout_constraintTop_toBottomOf="@+id/area11F"
+        app:layout_constraintWidth_percent="0.072" />
+
+    <Button
+        android:id="@+id/area28F"
+        android:layout_width="0dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/parking_nonavailable"
+        android:text="@string/_37"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/area27F"
+        app:layout_constraintTop_toBottomOf="@+id/area11F"
+        app:layout_constraintWidth_percent="0.072" />
+
+    <Button
+        android:id="@+id/area29F"
+        android:layout_width="0dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/parking_nonavailable"
+        android:text="@string/_29"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/area28F"
+        app:layout_constraintTop_toBottomOf="@+id/area11F"
+        app:layout_constraintWidth_percent="0.072" />
+
+    <Button
+        android:id="@+id/area30F"
+        android:layout_width="0dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/parking_nonavailable"
+        android:text="@string/_30"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/area31F"
+        app:layout_constraintTop_toBottomOf="@+id/area19F"
+        app:layout_constraintWidth_percent="0.11" />
+
+    <Button
+        android:id="@+id/area31F"
+        android:layout_width="0dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/parking_nonavailable"
+        android:text="@string/_31"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/area32F"
+        app:layout_constraintTop_toBottomOf="@+id/area19F"
+        app:layout_constraintWidth_percent="0.11" />
+
+    <Button
+        android:id="@+id/area32F"
+        android:layout_width="0dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/parking_nonavailable"
+        android:text="@string/_32"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/area33F"
+        app:layout_constraintTop_toBottomOf="@+id/area19F"
+        app:layout_constraintWidth_percent="0.11" />
+
+    <Button
+        android:id="@+id/area33F"
+        android:layout_width="0dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/parking_nonavailable"
+        android:text="@string/_33"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/area34F"
+        app:layout_constraintTop_toBottomOf="@+id/area19F"
+        app:layout_constraintWidth_percent="0.11" />
+
+    <Button
+        android:id="@+id/area34F"
+        android:layout_width="0dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/parking_nonavailable"
+        android:text="@string/_34"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/area19F"
+        app:layout_constraintWidth_percent="0.11" />
+
+
+    <Button
+        android:id="@+id/area35F"
+        android:layout_width="0dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/parking_nonavailable"
+        android:text="@string/_35"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/area30F"
+        app:layout_constraintWidth_percent="0.262" />
+
+    <Button
+        android:id="@+id/area37F"
+        android:layout_width="0dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/parking_nonavailable"
+        android:text="@string/_37"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/area36F"
+        app:layout_constraintTop_toBottomOf="@+id/area30F"
+        app:layout_constraintWidth_percent="0.262" />
+
+    <Button
+        android:id="@+id/area36F"
+        android:layout_width="0dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/parking_nonavailable"
+        android:text="@string/_36"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/area35F"
+        app:layout_constraintTop_toBottomOf="@+id/area30F"
+        app:layout_constraintWidth_percent="0.262" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="38dp"
+        android:contentDescription="@string/todo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintWidth_percent="0.085"
+        app:srcCompat="@drawable/mataangin" />
+
+    <Button
+        android:id="@+id/button43"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/parking_available"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/button44"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/parking_nonavailable"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button43" />
+
+    <Button
+        android:id="@+id/bt_camera6"
+        android:layout_width="40dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/transaparant_bg_bordered"
+        android:fontFamily="@font/mebold"
+        android:text="@string/f"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/bt_camera5" />
+
+    <Button
+        android:id="@+id/bt_camera7"
+        android:layout_width="40dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/bg_rounded"
+        android:fontFamily="@font/mebold"
+        android:text="@string/g"
+        android:textColor="@color/background"
+        android:onClick="toCameraG"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/bt_camera6" />
+
+    <Button
+
+        android:id="@+id/bt_camera1"
+        android:layout_width="40dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/bg_rounded"
+        android:fontFamily="@font/mebold"
+        android:text="@string/a"
+        android:textColor="@color/background"
+        android:onClick="toCameraA"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="OnClick" />
+
+    <Button
+        android:id="@+id/bt_camera8"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="40dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/bg_rounded"
+        android:fontFamily="@font/mebold"
+        android:text="@string/h"
+        android:textColor="@color/background"
+        android:onClick="toCameraH"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/bt_camera7" />
+
+    <Button
+        android:id="@+id/bt_camera5"
+        android:layout_width="40dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/bg_rounded"
+        android:fontFamily="@font/mebold"
+        android:text="@string/e"
+        android:textColor="@color/background"
+        android:onClick="toCameraE"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/bt_camera4" />
+
+    <Button
+        android:id="@+id/bt_camera4"
+        android:layout_width="40dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/bg_rounded"
+        android:fontFamily="@font/mebold"
+        android:text="@string/d"
+        android:textColor="@color/background"
+        android:onClick="toCameraD"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/bt_camera3" />
+
+    <Button
+        android:id="@+id/bt_camera2"
+        android:layout_width="40dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/bg_rounded"
+        android:fontFamily="@font/mebold"
+        android:text="@string/b"
+        android:textColor="@color/background"
+        android:onClick="toCameraB"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/bt_camera1" />
+
+    <Button
+        android:id="@+id/bt_camera3"
+        android:layout_width="40dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/bg_rounded"
+        android:fontFamily="@font/mebold"
+        android:text="@string/c"
+        android:textColor="@color/background"
+        android:onClick="toCameraC"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/bt_camera2" />
+
+    <Button
+        android:id="@+id/garis"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="0.9dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/blue"
+        app:layout_constraintBottom_toTopOf="@+id/bt_camera1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/garis2"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="0.9dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt_camera1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

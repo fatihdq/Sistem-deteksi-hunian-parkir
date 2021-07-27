@@ -1,0 +1,5 @@
+Model dan Data training set, validation set, test set dapat diunduh pada link dibawah ini :
+
+Data : https://drive.google.com/file/d/1e1xGgsPWZEomprfGYD7UJJV_wEqM9ppM/view?usp=sharing
+
+Model : https://drive.google.com/file/d/1AHBv8d_nCptPcdiBCKJABPT1dacjqG3i/view?usp=sharing
