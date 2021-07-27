@@ -1,0 +1,5 @@
+train
+main_loss,main_accuracy,val_loss,val_main_loss,val_aux1_loss,val_aux2_loss,val_main_accuracy
+0.010030077770352364,0.9968780279159546,0.13056813180446625,0.9903464317321777
+
+googlenet ===> 995/995 - 337s - loss: 0.0884 - main_loss: 0.0326 - aux1_loss: 0.0267 - aux2_loss: 0.0290 - main_main_accuracy: 0.9922 - aux1_aux1_accuracy: 0.9933 - aux2_aux2_accuracy: 0.9928
